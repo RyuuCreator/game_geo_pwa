@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/game_geo_pwa/assets/img/icons/icon-96x96.png">
+		<link rel="stylesheet" href="/game_geo_pwa/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+		<link rel="stylesheet" href="/game_geo_pwa/assets/css/styles.css">
+		<title>Test - PWA</title>
+		<!-- PWA -->
+		<link rel="manifest" href="/game_geo_pwa/manifest.json">
+		<link rel="apple-touch-icon" href="/game_geo_pwa/assets/icons/icon-96x96.png">
+		<meta name="apple-mobile-web-app-status-bar" content="black">
+		<meta name="theme-color" content="black">
+		<!-- MAP --> 
+		<link href='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+		<script src='https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+		<!-- RECHERCHE MAP -->
+		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+		<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+	</head>
+	<body>
+		<header class="headerTitre">
+			<img src="/game_geo_pwa/assets/img/logo/rct-web-dev-white-1.png" alt="Logo RCT Web Developer - Mickael Tailhades."/>
+			<h1 class="titre">Map & PWA Test</h1>
+		</header>
+
+		<nav class="navPage">
+			<li class="navPageLi">
+				<a href="/game_geo_pwa/index.html">Game Test</a>
+			</li>
+		</nav>
+
+        <div class="banner">
+			<div class="add-banner">
+				<p>Add To Home Screen. Pour ajouter "l'appli" en PWA, veuillez cliquer sur la bannière.</p>
+			</div>
+			<div id="push-permission">
+				<p>Recevoir les notifications.</p>
+			</div>
+		</div>
+
+        <div id="map"></div>
+
+        <script src="/game_geo_pwa/assets/js/map.js"></script>
+        <script src="/game_geo_pwa/assets/js/script.js"></script>
+	</body>
+</html>

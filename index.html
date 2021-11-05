@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/game_geo_pwa/assets/img/icons/icon-96x96.png">
+		<link rel="stylesheet" href="/game_geo_pwa/assets/css/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+		<link rel="stylesheet" href="/game_geo_pwa/assets/css/styles.css">
+		<title>Test - PWA</title>
+		<!-- PWA -->
+		<link rel="manifest" href="/game_geo_pwa/manifest.json">
+		<link rel="apple-touch-icon" href="/game_geo_pwa/assets/icons/icon-96x96.png">
+		<meta name="apple-mobile-web-app-status-bar" content="black">
+		<meta name="theme-color" content="black">
+	</head>
+	<body>
+		<header class="headerTitre">
+			<img src="/game_geo_pwa/assets/img/logo/rct-web-dev-white-1.png" alt="Logo RCT Web Developer - Mickael Tailhades."/>
+			<h1 class="titre">Game & PWA Test</h1>
+		</header>
+
+		<nav class="navPage">
+			<li class="navPageLi">
+				<a href="/game_geo_pwa/map.html">Map Géolocalisation</a>
+			</li>
+		</nav>
+
+		<div class="banner">
+			<div class="add-banner">
+				<p>Add To Home Screen. Pour ajouter le "l'appli" en PWA, veuillez cliquer sur la bannière.</p>
+			</div>
+			<div id="push-permission">
+				<p>Recevoir les notifications.</p>
+			</div>
+		</div>
+
+		<div class="game">
+			<canvas id="game" width="360" height="360"></canvas>
+			<div class="btn">
+				<div class="direction">
+					<span id="up" class="toucheUp touche">⇧</span>
+					<div class="leftRight">
+						<span id="left" class="touche">⇦</span>
+						<span id="right" class="touche">⇨</span>
+					</div>
+					<span id="down" class="toucheDown touche">⇩</span>
+				</div>
+				<div class="option">
+					<span id="speed">Speed</span>
+					<span id="take">Take</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="/game_geo_pwa/assets/js/game.js"></script>
+		<script src="/game_geo_pwa/assets/js/script.js"></script>
+	</body>
+</html>
